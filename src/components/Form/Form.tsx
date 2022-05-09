@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "../Button/Button";
+import { v4 as uuidv4 } from "uuid";
 
 interface Props {
 	setTarefas: any;
@@ -16,6 +17,9 @@ export const Form = ({ setTarefas }: Props) => {
 			{
 				tarefa,
 				tempo,
+				selecionado: false,
+				completado: false,
+				id: uuidv4(),
 			},
 		]);
 		setTarefa("");
