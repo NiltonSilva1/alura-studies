@@ -11,7 +11,7 @@ function App() {
 	const selecionaTarefa = (tarefaSelecionada: ITarefa) => {
 		setSelecionado(tarefaSelecionada);
 		setTarefas(
-			tarefas.map((tarefa: any) => ({
+			tarefas.map((tarefa: ITarefa) => ({
 				...tarefa,
 				selecionado: tarefa.id === tarefaSelecionada.id ? true : false,
 			}))
@@ -21,7 +21,7 @@ function App() {
 	function finalizarTarefa() {
 		if (selecionado) {
 			setSelecionado(undefined);
-			setTarefas((tarefasAnteriores: any[]) =>
+			setTarefas((tarefasAnteriores: ITarefa[]) =>
 				tarefasAnteriores.map((tarefa) => {
 					if (tarefa.id === selecionado.id) {
 						return {
@@ -42,7 +42,7 @@ function App() {
       bg-zinc-900 text-white"
 		>
 			<Form setTarefas={setTarefas} />
-			<Cronometro />
+			<Cronometro selecionado={selecionado} />
 			<List tarefas={tarefas} selecionaTarefa={selecionaTarefa} />
 		</div>
 	);

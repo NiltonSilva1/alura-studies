@@ -36,7 +36,8 @@ export const Form = ({ setTarefas }: Props) => {
 					Adicione um novo estudo
 				</label>
 				<input
-					className="w-full pt-2 px-3 pb-1 box-border border-none rounded-md bg-[#5D677C] shadow-md placeholder:text-[#BFBFBF]"
+					className="w-full pt-2 px-3 pb-1 box-border border-none rounded-md ]
+					bg-[#5D677C] shadow-md placeholder:text-[#BFBFBF]"
 					type="text"
 					name="tarefa"
 					id="tarefa"
@@ -51,7 +52,8 @@ export const Form = ({ setTarefas }: Props) => {
 					Tempo
 				</label>
 				<input
-					className="w-full pt-2 px-3 pb-1 box-border border-none rounded-md bg-[#5D677C] shadow-md placeholder:text-[#BFBFBF]"
+					className="w-full pt-2 px-3 pb-1 box-border border-none rounded-md 
+					bg-[#5D677C] shadow-md placeholder:text-[#BFBFBF]"
 					type="time"
 					step="1"
 					name="tempo"
