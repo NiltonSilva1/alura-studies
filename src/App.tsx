@@ -42,7 +42,7 @@ function App() {
       bg-zinc-900 text-white"
 		>
 			<Form setTarefas={setTarefas} />
-			<Cronometro selecionado={selecionado} />
+			<Cronometro selecionado={selecionado} finalizarTarefa={finalizarTarefa} />
 			<List tarefas={tarefas} selecionaTarefa={selecionaTarefa} />
 		</div>
 	);
